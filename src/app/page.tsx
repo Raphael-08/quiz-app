@@ -7,7 +7,6 @@ import {
   Search,
   BarChart2,
   User,
-  Plus,
 } from "lucide-react";
 import Image from "next/image";
 
