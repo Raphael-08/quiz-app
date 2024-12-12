@@ -1,0 +1,48 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_2143" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+<rect y="0.117645" width="20" height="20" rx="4" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_1_2143)">
+<g filter="url(#filter0_d_1_2143)">
+<g clip-path="url(#clip0_1_2143)">
+<mask id="mask1_1_2143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-3" y="0" width="27" height="21">
+<rect x="-3" y="0.117645" width="26.6667" height="20" fill="white"/>
+</mask>
+<g mask="url(#mask1_1_2143)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-3 0.117645V20.1176H23.6667V0.117645H-3Z" fill="#E31D1C"/>
+<mask id="mask2_1_2143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-3" y="0" width="27" height="21">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-3 0.117645V20.1176H23.6667V0.117645H-3Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_1_2143)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -1.54902V10.1176H23.6667V-1.54902H-3Z" fill="#F7FCFF"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-3 0.117645V20.1176L12 10.1176L-3 0.117645Z" fill="#3D58DB"/>
+<mask id="mask3_1_2143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-3" y="0" width="15" height="21">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-3 0.117645V20.1176L12 10.1176L-3 0.117645Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_1_2143)">
+</g>
+</g>
+<rect x="-3" y="0.117645" width="26.6667" height="20" fill="url(#paint0_linear_1_2143)" style="mix-blend-mode:overlay"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_2143" x="-6" y="-0.882355" width="32.6667" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2143"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2143" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1_2143" x1="10.3333" y1="0.117645" x2="10.3333" y2="20.1176" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-opacity="0.3"/>
+</linearGradient>
+<clipPath id="clip0_1_2143">
+<rect x="-3" y="0.117645" width="26.6667" height="20" rx="2" fill="white"/>
+</clipPath>
+</defs>
+</svg>
