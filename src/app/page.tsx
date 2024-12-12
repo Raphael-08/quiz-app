@@ -1,13 +1,8 @@
+import { QuizCard } from "@/components/quiz-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  ChevronRight,
-  Home,
-  Search,
-  BarChart2,
-  User,
-} from "lucide-react";
+import { quizzes } from "@/data/quiz";
 import Image from "next/image";
 
 export default function QuizApp() {
@@ -37,7 +32,15 @@ export default function QuizApp() {
         </div>
 
         {/* Recent Quiz Card */}
-        <Card className="bg-accent p-4 rounded-2xl mb-4">
+        <Card className="relative bg-accent p-4 rounded-2xl mb-4">
+          <div className="absolute top-0 left-0">
+            <Image
+              height={100}
+              width={300}
+              src={"/lines.svg"}
+              alt={"Recent Quiz Icon"}
+            />
+          </div>
           <div className="flex justify-between items-center">
             <div className="flex flex-col w-3/4 gap-1 pl-1">
               <p className="text-[#aa6571] text-xs pl-1 font-bold">
@@ -123,69 +126,10 @@ export default function QuizApp() {
 
         {/* Quiz List */}
         <div className="space-y-3 px-2 mb-16">
-          <Card className="bg-white p-2 rounded-3xl shadow-sm">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center p-0">
-                  <Image
-                    height={63}
-                    width={63}
-                    src={"/m-quiz.svg"}
-                    alt={"bi"}
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-black font-bold">Statistics Math Quiz</h3>
-                  <p className="text-xs text-gray-500">Math • 12 Quizzes</p>
-                </div>
-              </div>
-              <ChevronRight className="text-primary" />
-            </div>
-          </Card>
-          <Card className="bg-white p-2 rounded-3xl shadow-sm">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center p-0">
-                  <Image
-                    height={63}
-                    width={63}
-                    src={"/I-quiz.svg"}
-                    alt={"bi"}
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-black font-bold">Integers Quiz</h3>
-                  <p className="text-xs text-gray-500">Math • 10 Quizzes</p>
-                </div>
-              </div>
-              <ChevronRight className="text-primary" />
-            </div>
-          </Card>
+          {quizzes.slice(0, 6).map((quiz) => (
+            <QuizCard key={quiz.title} {...quiz} />
+          ))}
         </div>
-      </div>
-
-      {/* Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white h-16 flex items-center justify-around px-6 rounded-t-3xl shadow-custom-b">
-        <Button variant="ghost" size="icon" className="text-purple-600">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon" className="text-gray-400">
-          <Search className="h-6 w-6" />
-        </Button>
-        <div className="relative -top-8">
-          <Button
-            size={"icon"}
-            className="h-12 w-12 rounded-full bg-primary hover:bg-primary"
-          >
-            <Image height={23} width={23} src={"/plus.svg"} alt={"bi"} />
-          </Button>
-        </div>
-        <Button variant="ghost" size="icon" className="text-gray-400">
-          <BarChart2 className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon" className="text-gray-400">
-          <User className="h-6 w-6" />
-        </Button>
       </div>
     </div>
   );
